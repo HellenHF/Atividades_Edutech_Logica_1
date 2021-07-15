@@ -1,0 +1,26 @@
+<meta charset="UTF-8">
+<h1> Deu certo! </h1>
+<hr>
+<script>
+
+    function pulaLinha() {
+    document.write("<br>");
+    document.write("<br>");
+}
+
+function mostra(frase) {
+    document.write(frase);
+    pulaLinha();
+}
+
+var limite = 0;
+var numeros = 20;
+
+	while(numeros >= limite) {
+				mostra(numeros);
+			numeros = numeros - 1
+	}	
+
+mostra("FIM");
+
+</script>

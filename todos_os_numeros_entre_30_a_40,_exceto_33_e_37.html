@@ -1,0 +1,33 @@
+<meta charset="UTF-8">
+<h1> Deu certo! </h1>
+<hr>
+<script>
+
+    function pulaLinha() {
+    document.write("<br>");
+    document.write("<br>");
+}
+
+function mostra(frase) {
+    document.write(frase);
+    pulaLinha();
+}
+
+var limite = 40;
+var numeros = 30;
+
+	while(numeros <= limite) {
+		if (numeros == 33) {
+		numeros = numeros + 1
+		}
+		 if (numeros == 37) {
+			numeros = numeros + 1
+		} else {
+			mostra(numeros);
+			numeros = numeros + 1
+		}
+	}
+	
+mostra("FIM");
+
+</script>

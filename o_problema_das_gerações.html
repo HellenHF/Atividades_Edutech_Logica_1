@@ -1,0 +1,33 @@
+<meta charset="UTF-8">
+Em média, um casal tem filhos quando atinge a idade de 28 anos. Seguindo essa média, se os portugueses chegaram em 1500 no Brasil, então, a primeira geração de brasileiros surgiu em 1528, a segunda em 1556 e assim por diante. Desde 1500 até o ano atual, quantas gerações se passaram?
+
+Vamos criar um programa para resolver a tarefa!
+
+Imprima esse número da seguinte maneira: calcule quantos anos passaram desde 1500 e divida o resultado pela média de 28 anos.
+<br> <br>
+<script>
+		var anoInicio=1500;
+		var anoAtual=2021;
+		var diferenca=anoAtual - anoInicio;
+		var geracoes=diferenca/28;
+
+	function pulaLinha() {
+
+        document.write("<br>");
+
+    }
+
+	function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+    }
+
+
+mostra("Temos como ano inicial " + anoInicio + " e como ano atual " + anoAtual + ".");
+mostra("Tendo assim " + (anoAtual - anoInicio) + " anos de diferença.");
+mostra("Se a cada " + 28 + " anos há uma nova geração, então em " + diferenca + " teremos " + geracoes + " gerações.");
+mostra("Sendo assim arredondada para " + Math.round(geracoes) + ".");
+
+
+</script>

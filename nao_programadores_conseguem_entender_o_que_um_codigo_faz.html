@@ -1,0 +1,29 @@
+<meta charset="UTF-8">
+<script>
+    // A função pulaLinha está inserida dentro da função exibeTítulo e exibeParágrafo, sendo assim, para alterar a função em todos os lugares, basta alterar na função pulaLinha.
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function exibeTitulo(titulo) {
+        document.write("<h1>" + titulo + "</h1>");
+        pulaLinha();
+    }
+
+    function exibeParagrafo(paragrafo) {
+        document.write("<p>" + paragrafo + "</p>");
+        pulaLinha();
+    }
+
+    // pede para alguém ler daqui em diante e veja se ele entende o que esta sendo feito
+    exibeTitulo("Bem-vindos");
+    exibeParagrafo("Este é um simples programa");
+
+    //a função <p> é usada para fazer um parágrafo no texto e é finalizada com </p>. Ex:
+    exibeParagrafo("Quer aprender a faze-lo comigo?");
+    //agora um documento.write sem o <p>, podemos verificar que o parágrafo foi retirado e que a função pulaLinha é a responsável pelo espaçamento e que sem ela a escrita ficaria toda junta :);
+    document.write("Por que usamos a tag p?");
+
+
+
+</script>

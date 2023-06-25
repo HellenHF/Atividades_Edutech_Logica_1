@@ -1,0 +1,11 @@
+valor = input()
+valor = float(valor)
+porcentagem = input()
+porcentagem = int(porcentagem)
+
+acrescimo = (porcentagem / 100) * valor
+
+reajuste = acrescimo + valor
+reajuste = float(reajuste)
+
+print('%.2f' % reajuste)
